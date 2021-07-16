@@ -4,13 +4,13 @@ Sometimes you need run your project in multi-environment mode. For example, for 
 
 How to do this.
 
-1. You can use 
-https://packagist.org/packages/casperwilkes/laravel-environment_detector
+1. You can use <br/>
+https://packagist.org/packages/casperwilkes/laravel-environment_detector<br/>
 here is prity simple.
 
-2. You can do this thing by you hands.
+2. You can do this thing by you hands.<br/>
 edit bootstrap/app.php and add before last line following code:
-[code]
+```
 /*
 |--------------------------------------------------------------------------
 | Return The Application
@@ -34,6 +34,6 @@ if (isset($_SERVER['HTTP_HOST']) && !empty($_SERVER['HTTP_HOST']))
     }
 }
 return $app;
-[/code]
+```
 
 next step - add .env.{domain} files to your project and enjoy it
